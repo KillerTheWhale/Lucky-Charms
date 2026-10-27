@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.01em;
+    line-height: 1.5;
+    background-color: #1c1c1c;
+    color: #222222;
+
+    display: grid;
+    grid-template-columns: 220px minmax(0, 760px);
+    justify-content: center;
+    gap: 25px;
+}
+
+header {
+    background-color: #c91f35;
+    color: #ffffff;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    grid-column: 1 / 3;
+}
+
+header h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -0.06em;
+}
+
+
+
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+    align-self: start;
+    position: sticky;
+    top: 145px;
+}
+
+nav h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #c91f35;
+}
+
+menu {
+    border-top: 1px solid #222222;
+    padding-top: 12px;
+}
+
+ul > li {
+    list-style: none;
+    margin-bottom: 9px;
+    font-size: 12px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover,
+.zine-page a:hover,
+footer a:hover {
+    color: #c91f35;
+    text-decoration: underline;
+}
+
+main {
+    min-width: 0;
+    background-color: #fff3e7;
+    padding: 20px;
+}
+
+article {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.cover {
+    background-color: #c91f35;
+    color: #ffffff;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cover h2 {
+    font-size: 60px;
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    max-width: 450px;
+}
+
+.cover p {
+    font-size: 13px;
+}
+
+
+.zine-page {
+    background-color: #ffffff;
+    border: 2px solid #222222;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-number {
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    margin-bottom: 65px;
+    color: #c91f35;
+}
+
+.zine-page h2 {
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    margin-bottom: 45px;
+    color: #c91f35;
+}
+
+.zine-page > p:not(.page-number):not(.page-label) {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 100%;
+    color: #222222;
+}
+
+.page-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    border-top: 1px solid #222222;
+    padding-top: 12px;
+    margin-top: auto;
+    margin-bottom: 15px;
+    color: #c91f35;
+}
+
+.zine-page > a,
+footer a {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+}
+
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 30px;
+    border-top: 6px solid #c91f35;
+}
+
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #c91f35;
+}
+
